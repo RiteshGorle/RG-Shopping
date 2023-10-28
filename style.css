@@ -1,0 +1,379 @@
+/* 
+
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>  WebSite Name:Shopping Website  <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Made by: Ritesh Gorle       <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%--> 
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Created: Oct 2023           <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+<!--%%%%%%%%%%%%%%%%%%%%%%%%%%=>     Content: Clothes Shopping   <=%%%%%%%%%%%%%%%%%%%%%%%%%%%%%-->
+
+
+*/
+
+/*****************************************
+Table Of Contents:
+
+00. BASIC CSS Style 
+01. SECTION 00
+02. LOGO AND NAVIGATION
+03. ROUNDED IMAGES
+04. TRENDING t-SHIRT CARD: SECTION 06, 07, 09, 10
+05. SECTION 13: TWO CARDS TWO CARDS
+06. SECTION 14: FOUR ICONS
+07. SECTION 15: SUBSCRIBE BOX
+08. SECTION 16: FOOTER
+
+******************************************/
+
+
+/******************************/
+/*   00. BASIC CSS Style      */
+/******************************/   
+
+body {
+    font-family: 'Playfair Display';
+}
+
+
+.hover-all-img:hover  {
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+
+.all-button{
+    color: white;
+    font-size: 14px;
+    text-transform: uppercase;
+    width: 150px ;
+    height: 40px;
+    background: #770015;
+}
+
+
+/******************************/
+/*      01. SECTION 00       */
+/******************************/   
+.section-00-para{
+    font-size: 15px;
+}
+
+
+#id00{
+    background: url('Rectangle 1.png');
+    width: 100%;
+}
+
+
+@media only screen and (max-width: 600px) {
+  .SECTION-00-img{
+    width: 200px;
+  }
+
+}
+
+@media only screen and (max-width: 900px) {
+  .SECTION-00-img{
+    width: 200px;
+  }
+
+}
+
+
+
+/******************************/
+/*   02. LOGO AND NAVIGATION   */
+/******************************/  
+/* Reset default margin and padding for elements */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Style the navigation bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+    color: #fff;
+    padding: 10px 20px;
+}
+
+/* Style the left side of the navigation bar (button) */
+.navbar-left {
+    flex: 1;
+}
+
+.nav-button {
+    background-color: #4CAF50;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Style the middle of the navigation bar (logo) */
+.navbar-middle {
+    flex: 1;
+    text-align: center;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Style the right side of the navigation bar (nav links) */
+.navbar-right {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links {
+    list-style: none;
+}
+
+.nav-links li {
+    display: inline;
+    margin-right: 20px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+
+
+/******************************/
+/*      03. ROUNDED IMAGES    */
+/******************************/ 
+.SECTION-03-para{
+    font-size: 16px;
+    font-weight: 600;
+}
+
+
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  
+  .SECTION-03-para{
+    font-size: 12px;
+    font-weight: 600;
+}
+
+}
+
+
+
+
+/********************************************************/
+/*    04. TRENDING t-SHIRT CARD: SECTION 06, 07, 09, 10  */
+/********************************************************/ 
+.card{
+    width: 200px;
+    height: 340px;
+    margin: 5px;
+    border-radius: var(--radius);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card .card__img{
+    width: 100%;
+    height: 100%;
+
+    object-fit: cover;
+    transition: transform 250ms ease-out;
+    border-radius: var(--radius);
+}
+
+.card .card__details{
+    margin-top: -339px;
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(10px) brightness(1.3);
+    transition: opacity 350ms;
+
+    opacity: 0;
+}
+
+
+ul#menu li {
+  display:inline;
+
+}
+
+
+
+/* Card Hover Effects */
+.card:hover .card__img{
+    transform: scale(1.1);
+}
+.card:hover .card__details{
+    opacity: .5;
+}
+
+
+
+
+
+/********************************************/
+/*   05. SECTION 13: TWO CARDS TWO CARDS    */
+/*******************************************/ 
+
+.card-1 {
+    background: url('Rectangle 12.png');
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+
+
+.SECTION-13-img-1:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+ 
+
+.card-2 {
+    background: url('Rectangle 13.png');
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  width: 80%;
+  height: 500px;
+  margin: auto;
+  text-align: center;
+  
+}
+
+
+.SECTION-13-img-2:hover{
+    -webkit-transform: scale(0.9);
+    transform: scale(0.9);
+}
+ 
+
+
+ /* Media Queries */
+@media only screen and (max-width: 500px) {
+  
+  .card-1 {
+     height: 400px;
+  }
+
+  .card-2 {
+     height: 400px;
+  }
+
+}
+
+
+
+
+/********************************************/
+/*          06. SECTION 14: FOUR ICONS      */
+/*******************************************/ 
+
+#id99{
+    background: url('Rectangle 24.png');
+    width: 100%;
+    height: auto;
+}
+
+
+
+/********************************************/
+/*        07. SECTION 15: SUBSCRIBE BOX     */
+/*******************************************/ 
+#id77{
+    background: linear-gradient(97.3deg, #AB001E -6.23%, #770015 105.09%);
+    position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+.centered {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+
+.search-container button {
+  float: right;
+  padding: 6px;
+  margin-top: 0px;
+  margin-right: 16px;
+  background: #ddd;
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+}
+
+.search-container button:hover {
+  background: #ccc;
+}
+
+.SECTION-15-para{
+    font-size: 22px;
+}
+
+
+/* hide and seek css */
+
+@media screen and (min-width: 0px) and (max-width: 1200px) {
+  #my-content { display: none; }  /* hide it elsewhere */
+
+  
+}
+
+@media screen and (min-width: 1201px) and (max-width:4000px) {
+  #my-content { display:block; }  /* show it on big screens */
+   
+}
+
+
+
+
+/******************************/
+/*    08. SECTION 16: FOOTER   */
+/******************************/ 
+footer{
+    font-family: sans-serif;
+}
+
+#id78 {
+    font-size: 12px;
+    text-decoration: none;
+    color: black;
+
+}
+
+#id78:hover {
+    color: red ;
+}
+
+
+
+.head4{
+    font-size: 14px;
+    color: #770015;
+}
+
+
+.SECTION-16-para{
+    font-size: 14px;
+}
+
+
